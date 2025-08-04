@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Secure Encoder/Decoder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container" id="loginBox">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username" />
+    <input type="password" id="password" placeholder="Password" />
+    <button onclick="login()">Login</button>
+  </div>
+
+  <div class="container" id="mainBox" style="display:none">
+    <h2>Secure Encoder/Decoder</h2>
+    <textarea id="inputText" rows="4" placeholder="Enter your message..."></textarea>
+    <input type="password" id="encryptionKey" placeholder="Enter encryption key (for full decode)" />
+    <button onclick="encodeText()">Encode</button>
+    <button onclick="decodeText()">Decode</button>
+    <div class="output" id="outputArea"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
